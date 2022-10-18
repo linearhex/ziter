@@ -76,11 +76,3 @@ loader.setColors({
     },
   })
 
-const Lavalink = new Aoijs.Lavalink(bot);
-
-Lavalink.addNode({ 
-  url: client.lavalink.url, 
-  password: client.lavalink.password, 
-  name: client.lavalink.usernames, 
-  secure: client.lavalink.ssl 
-});
