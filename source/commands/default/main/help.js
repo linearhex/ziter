@@ -15,7 +15,7 @@ module.exports = [{
 # Version : __\`2022.02\`__  #SEMI# More Comands Info, Type \`#cmdinfo [commands]\`]
   $color[1;2f3136]
   $thumbnail[1;$userAvatar[$clientID]]
-  $footer[1;$getVar[footers];$serverIcon]
+  $footer[1;$getVar[footer];$serverIcon]
   $addTimestamp[1]
   $addSelectMenu[1;help_$authorID;Click 4 More Category Command!;1;1;no;
 Music:⨯ [FREE TO USE]:musics:no:<:number_one:888303236652605500>;
@@ -23,7 +23,7 @@ Utility:⨯ [FREE TO USE]:utils:no:<:number_two:888303335780806656>;
 Apps:⨯ [ADMIN ONLY]:apps:no:<:number_three:888303360996933682>;
 Game:⨯ [FREE TO USE]:games:no:<:number_four:888303393758674946>;
 Mod:⨯ [ADMIN ONLY]:mods:no:<:number_four:888303393758674946>]
-  $addButton[2;$getVar[footers];link;https://instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ;no;<:link:888306636857421864>]
+  $addButton[2;$getVar[footer];link;https://instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ;no;<:link:888306636857421864>]
   $addButton[2;Member Count: $membersCount;link;https://dsc.gg/$randomText[g+;genetic];no;<:plus:888307778668601345>]
  $addButton[2;Ends Interaction;secondary;endsinteract_$authorID;no;<a:whitesparkle:941296331941638154>]`
 
@@ -76,7 +76,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 — To joining vc!}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }
 ;
@@ -86,7 +86,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -129,7 +129,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 — To See list languages!}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }
 ;
@@ -139,7 +139,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -164,7 +164,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 — To closing or opening apps!}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }
 ;
@@ -174,7 +174,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -195,7 +195,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 __**NOTE#COLON#**__ We still working for others game commands, theres a bugs to fix right now...}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }
 ;
@@ -205,7 +205,7 @@ __**NOTE#COLON#**__ We still working for others game commands, theres a bugs to 
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:yes:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇp:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -234,7 +234,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 }
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }
 ;
@@ -244,7 +244,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:yes:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -261,7 +261,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {description: This menu was ended by <@!$interactionData[author.id]>, Please retype \`#help\` to see again!}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 }]
 
@@ -287,7 +287,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 # Version #COLON# __\`11.2.03-dev\`__  #SEMI# More Comands Info, Type \`#cmdinfo [commands]\`!}
 {color:2f3136}
 {timestamp}
-{footer:$getVar[footers]:$serverIcon}
+{footer:$getVar[footer]:$serverIcon}
 {thumbnail:$userAvatar[$clientID]}
 };
 {actionRow:{selectMenu:help_$authorID:Click 4 More Category Command!:1:1:no:{selectMenuOptions:Music:musics:⨯ [FREE TO USE]:no:<:number_one:888303236652605500>}
@@ -298,7 +298,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 
 {actionRow:{button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Member Count#COLON# $membersCount:link:https#COLON#//dsc.gg/$randomText[g+;genetic]:no:<:plus:888307778668601345>}
-{button:$getVar[footers]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}}
+{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}}
 ]
 
 $onlyif[$advancedTextSplit[$interactionData[customId];_;1]==back;]

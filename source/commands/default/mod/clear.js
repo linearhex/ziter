@@ -6,6 +6,6 @@ $deleteIn[2s]
   $clear[$sum[$message[1];1];everyone]
   $onlyPerms[managemessages;managechannel;\`[ERROR]\`: You don't have perms to do this.]
   $onlyIf[$message[1]!=;\`[ERROR]\`: Please put valid amount!]
-  $onlyIf[$message[1]==0;\`[ERROR]\`: Minimal amount is 1!]
+  $onlyIf[$message[1]!=0;\`[ERROR]\`: Minimal amount is 1!]
   $onlyIf[$isNumber[$message[1]]==true;\`[ERROR]\`: That invalid amounts!]`
 }
