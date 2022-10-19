@@ -23,8 +23,8 @@ Utility:⨯ [FREE TO USE]:utils:no:<:number_two:888303335780806656>;
 Apps:⨯ [ADMIN ONLY]:apps:no:<:number_three:888303360996933682>;
 Game:⨯ [FREE TO USE]:games:no:<:number_four:888303393758674946>;
 Mod:⨯ [ADMIN ONLY]:mods:no:<:number_four:888303393758674946>]
-  $addButton[2;$getVar[footer];link;https://instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ;no;<:link:888306636857421864>]
-  $addButton[2;Member Count: $membersCount;link;https://dsc.gg/$randomText[g+;genetic];no;<:plus:888307778668601345>]
+  $addButton[2;$getVar[footer];link;https://instagram.com/explore/tags/zitergp;no;<:link:888306636857421864>]
+  $addButton[2;Member Count: $membersCount;link;https://dsc.gg/zitergp;no;<:plus:888307778668601345>]
  $addButton[2;Ends Interaction;secondary;endsinteract_$authorID;no;<a:whitesparkle:941296331941638154>]`
 
   /**
