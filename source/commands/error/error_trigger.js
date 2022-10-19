@@ -2,7 +2,7 @@ module.exports = {
   type: 'functionError',
   channel: "922014327085617204",
   code: `$title[1;NEW ERROR!]
-  $addField[1;Guid, Channel ID:;$guildID, $channelID;yes]
+  $addField[1;Guild, Channel ID:;$guildID, $channelID;yes]
   $addField[1;Error:;$handleError[error];yes]
   $addField[1;Function:;\`\`\`$handleError[function]\`\`\`;yes]
   $addField[1;Commands:;\`\`\`$handleError[command]\`\`\`;yes]

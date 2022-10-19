@@ -12,7 +12,7 @@ module.exports = [{
 **— Developers by:**
 <@$botOwnerID> / $userTag[$botOwnerID]
 
-# Version : __\`2022.02\`__  #SEMI# More Comands Info, Type \`#cmdinfo [commands]\`]
+# Version : __\`2022.10\`__  #SEMI# More Comands Info, Type \`#cmdinfo [commands]\`]
   $color[1;2f3136]
   $thumbnail[1;$userAvatar[$clientID]]
   $footer[1;$getVar[footer];$serverIcon]
