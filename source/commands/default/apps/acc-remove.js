@@ -5,8 +5,9 @@ module.exports = [{
 $takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_pub]]
 $giverole[$guildId;$findUser[$message];$getServerVar[apps_role_mem]]
 
-$channelSendMessage[$getServerVar[apps_channel];<a:_:918393431666069555>: <@$findUser[$message]> you're now are member of ziter! ♡♡♡]
+$sendMessage[<a:_:918393431666069555>: <@$findUser[$message]> you're now are member of ziter! ♡♡♡]
 
+$onlyIf[$message[1]!=;\`[ERROR]\`: Missing ID / Mention.]
 $onlyForRoles[$getServerVar[apps_role_lead];]
 $onlyIf[$hasRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]==false;\`[EROR]\`: That user already member...]
   `
@@ -16,6 +17,7 @@ $onlyIf[$hasRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]==fal
 $takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]
 $giverole[$guildId;$findUser[$message];$getServerVar[apps_role_pub]]
 $addCmdReactions[<a:_:918393431666069555>]
+$onlyIf[$message[1]!=;\`[ERROR]\`: Missing ID / Mention.]
 $onlyForRoles[$getServerVar[apps_role_lead];]
 $onlyIf[$hasRole[$guildID;$findUser[$message];$getServerVar[apps_role_pub]]==false;\`[EROR]\`: That user isn't member...]
   `
