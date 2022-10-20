@@ -13,7 +13,7 @@ app.listen(3000, () => {
 
 const Discord = require('discord.js');
 const client = require('./config/main.js')
-const load = require('./handler/cmds_index.js')
+const load = require('./handler/cmds.js')
 
 const Aoijs = require('aoi.js')
 const bot = new Aoijs.Bot({
@@ -51,9 +51,9 @@ const voice = new Aoijs.Voice(bot, {
 });
 voice.onTrackStart()
 
-require('./handler/event_index.js')(bot)
-require('./handler/status_index.js')(bot)
-require('./handler/db_index.js')(bot)
+require('./handler/events.js')(bot)
+require('./handler/status.js')(bot)
+require('./handler/databases.js')(bot)
 
 const loader = new Aoijs.LoadCommands(bot)
 loader.load(bot.cmd, load.path.normalcmd)
