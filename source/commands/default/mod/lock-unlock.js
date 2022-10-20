@@ -9,7 +9,7 @@ module.exports = [{
   $onlyIf[$getChannelVar[channel;$get[channel]]!=lock;\`[ERROR]\`: This channel already locked!]
   $onlyIf[$getChannelVar[channel;$get[channel]]!=templock;\`[ERROR]\`: This channel already temporary locked!]
 
-$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$channelID];false;$message[1]]]`
+$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
   name: "unlockchannel",
   aliases: ['unlock'],
@@ -33,7 +33,7 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$chan
   $onlyIf[$getChannelVar[channel;$get[channel]]!=lock;\`[ERROR]\`: This channel already locked!]
   $onlyIf[$getChannelVar[channel;$get[channel]]!=templock;\`[ERROR]\`: This channel already temporary locked!]
 
-$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$channelID];false;$message[1]]]`
+$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
   type: 'timeout',
   name: "templock",

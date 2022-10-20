@@ -21,7 +21,7 @@ const bot = new Aoijs.Bot({
     prefix: [client.prefix.default, client.prefix.recommended, client.mention.one, client.mention.two],
     intents: "all",
     database: {
-      db: require("dbdjs.db"),
+    db: require("dbdjs.db"),
     type: "dbdjs.db",
     path: "./db/",
     tables: ["index"],
