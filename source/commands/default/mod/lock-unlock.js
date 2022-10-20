@@ -30,8 +30,8 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$chan
   $setChannelVar[channel;templock;$get[channel]]
   $addCmdReactions[🔒]
   $onlyPerms[managemessages;managechannel;\`#RIGHT#ERROR#LEFT#\`: You don't have perms to do this.]
-  $onlyIf[$getChannelVar[channel;$get[channel]]!=lock;\`[ERROR]\`: This channel already locked!]
-  $onlyIf[$getChannelVar[channel;$get[channel]]!=templock;\`[ERROR]\`: This channel already temporary locked!]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;\`[ERROR]\`: This channel already locked!]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;\`[ERROR]\`: This channel already temporary locked!]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
