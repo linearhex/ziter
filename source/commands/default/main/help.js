@@ -1,7 +1,7 @@
 module.exports = [{
   name: "help",
   code: `$onlyForIDs[$botOwnerID;On Maintenace]
-  $author[1;⨯ . ⁺ ✦ Genetic Bots Help Commands +;$userAvatar[$authorID]]
+  $author[1;⨯ . ⁺ ✦ ZITER Bots Help Commands +;$userAvatar[$authorID]]
   $description[1;**— My Prefix is \`$getVar[prefix]\`**
 .    Select category below to see all category of My __Commands!__
 
@@ -86,7 +86,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -105,7 +105,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 — To see users or server avatar!,
 
 **\`#botinfo\`**
-— To see Genetic bots stats!,
+— To see ZITER bots stats!,
 
 **\`#dm [user] [message]\`**
 — To send direct message!,
@@ -139,7 +139,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -174,7 +174,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -205,7 +205,7 @@ __**NOTE#COLON#**__ We still working for others game commands, theres a bugs to 
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:yes:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇp:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -244,7 +244,7 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Game:games:⨯ [FREE TO USE]:no:<:number_four:888303393758674946>}
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:yes:<:number_four:888303393758674946>}}
 
-{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}
+{actionRow:{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}
 {button:Main Pages:secondary:back_$authorID:no:<a:whitesparkle:941296331941638154>}
 {button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
 }
@@ -297,8 +297,8 @@ $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[aut
 {selectMenuOptions:Mod:mods:⨯ [ADMIN ONLY]:no:<:number_four:888303393758674946>}}}
 
 {actionRow:{button:Ends Interaction:secondary:endsinteract_$authorID:no:<a:whitesparkle:941296331941638154>}
-{button:Member Count#COLON# $membersCount:link:https#COLON#//dsc.gg/$randomText[g+;genetic]:no:<:plus:888307778668601345>}
-{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/𝗚𝗘𝗡𝗘𝗧𝗜𝗖ᶜˡᵘᵇ:no:<:link:888306636857421864>}}
+{button:Member Count#COLON# $membersCount:link:https#COLON#//dsc.gg/zitergp:no:<:plus:888307778668601345>}
+{button:$getVar[footer]:link:https#COLON#//instagram.com/explore/tags/zitergp:no:<:link:888306636857421864>}}
 ]
 
 $onlyif[$advancedTextSplit[$interactionData[customId];_;1]==back;]
