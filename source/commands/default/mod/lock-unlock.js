@@ -1,4 +1,4 @@
-const lock = require('./config/error.js')
+const lock = require('./config/error.json')
 
 module.exports = [{
   name: "lockchannel",
