@@ -24,9 +24,10 @@ const bot = new Aoijs.Bot({
     prefix: [client.prefix.default, client.prefix.recommended, client.mention.one, client.mention.two],
     intents: "all",
     database: {
-    db: aoimongo,
-    type: "aoi.mongo",
-    path: process.env.mongo,
+    db: require('dbdjs.db'),
+    type: "dbdjs.db",
+    path: "./db/index/",
+    table: ["index"],
     },
     respondOnEdit: {
       commands: true,
