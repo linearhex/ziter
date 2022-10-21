@@ -1,4 +1,4 @@
-const errormsg = require('config/error.js')
+const errormsg = require('../../../../config/error.js')
 
 module.exports = {
   name: "8ball",

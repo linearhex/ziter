@@ -14,6 +14,7 @@ app.listen(3000, () => {
 const Discord = require('discord.js');
 const client = require('./config/main.js')
 const load = require('./handler/cmds.js')
+const errormsg = require('./config/error.js')
 
 const Aoijs = require('aoi.js')
 const bot = new Aoijs.Bot({
