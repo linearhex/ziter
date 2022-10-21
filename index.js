@@ -12,8 +12,6 @@ app.listen(3000, () => {
 
 
 const Discord = require('discord.js');
-const aoimongo = require('aoi.mongo');
-const mongodb = require('mongodb');
 const client = require('./config/main.js')
 const load = require('./handler/cmds.js')
 const errormsg = require('./config/error.js')
