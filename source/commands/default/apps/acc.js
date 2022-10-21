@@ -1,9 +1,8 @@
 module.exports = [{
   name: "accept",
   aliases: ['acc'],
-  code: `
-$takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_pub]]
-$giverole[$guildId;$findUser[$message];$getServerVar[apps_role_mem]]
+  code: `$takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_pub]]
+$giveRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]
 
 $sendMessage[<a:_:918393431666069555>: <@$findUser[$message]> you're now are member of ziter! ♡♡♡]
 
@@ -13,9 +12,8 @@ $onlyIf[$hasRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]==fal
   `
 }, {
   name: "remove",
-  code: `
-$takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]
-$giverole[$guildId;$findUser[$message];$getServerVar[apps_role_pub]]
+  code: `$takeRole[$guildID;$findUser[$message];$getServerVar[apps_role_mem]]
+$giveRole[$guildID;$findUser[$message];$getServerVar[apps_role_pub]]
 $addCmdReactions[<a:_:918393431666069555>]
 $onlyIf[$message[1]!=;\`[ERROR]\`: Missing ID / Mention.]
 $onlyForRoles[$getServerVar[apps_role_lead];]
