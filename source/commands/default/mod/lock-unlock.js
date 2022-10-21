@@ -1,4 +1,4 @@
-const lock = require('./config/error.json')
+const errormsg = require('./config/error.json')
 
 module.exports = [{
   name: "lockchannel",
@@ -7,9 +7,9 @@ module.exports = [{
   $addCmdReactions[🔒]
   $setChannelVar[channel;lock;$get[channel]]
 
-  $onlyPerms[managemessages;managechannel;${lock.perms}]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${lock.locked}]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${lock.templocked}]
+  $onlyPerms[managemessages;managechannel;${errormsg.lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${errormsg.lock.locked}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${errormsg.lock.templocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
@@ -19,8 +19,8 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$chan
   $addCmdReactions[🔓]
   $setChannelVar[channel;unlock;$get[channel]]
 
-  $onlyPerms[managemessages;managechannel;${lock.perms}]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==unlock;${lock.unlocked}]
+  $onlyPerms[managemessages;managechannel;${errormsg.lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==unlock;${errormsg.lock.unlocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$channelID];false;$message[1]]]`
 }, {
@@ -31,9 +31,9 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$chan
   $modifyChannelPerms[$guildID;$get[channel];-sendmessage]
   $setChannelVar[channel;templock;$get[channel]]
   $addCmdReactions[🔒]
-  $onlyPerms[managemessages;managechannel;${lock.perms}]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${lock.locked}]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${lock.templocked}]
+  $onlyPerms[managemessages;managechannel;${errormsg.lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${errormsg.lock.locked}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${errormsg.lock.templocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
