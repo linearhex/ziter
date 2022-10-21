@@ -13,10 +13,7 @@ const client = {
     recommended: "#"
   },
   db: {
-    type: "default",
-    path: "./db/",
-    tables: "index",
-    promisify: false
+    path: process.env.mongo
   }
 };
 
