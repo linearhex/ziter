@@ -22,7 +22,7 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$chan
   $onlyPerms[managemessages;managechannel;${errormsg.lock.perms}]
   $onlyIf[$getChannelVar[channel;$get[channel]]==unlock;${errormsg.lock.unlocked}]
 
-$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$channelID];false;$message[1]]]`
+$let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
   name: "cooldownlock",
   aliases: ['templock'],
