@@ -1,3 +1,5 @@
+const lock = require('./config/error.js')
+
 module.exports = [{
   name: "lockchannel",
   aliases: ['lock'],
@@ -5,9 +7,9 @@ module.exports = [{
   $addCmdReactions[🔒]
   $setChannelVar[channel;lock;$get[channel]]
 
-  $onlyPerms[managemessages;managechannel;\`#RIGHT#ERROR#LEFT#\`: You don't have perms to do this.]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;\`[ERROR]\`: This channel already locked!]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;\`[ERROR]\`: This channel already temporary locked!]
+  $onlyPerms[managemessages;managechannel;${lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${lock.locked}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${lock.templocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
@@ -17,8 +19,8 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$chan
   $addCmdReactions[🔓]
   $setChannelVar[channel;unlock;$get[channel]]
 
-  $onlyPerms[managemessages;managechannel;\`#RIGHT#ERROR#LEFT#\`: You don't have perms to do this.]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==unlock;\`[ERROR]\`: This channel already unlocked!]
+  $onlyPerms[managemessages;managechannel;${lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==unlock;${lock.unlocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$channelID];false;$message[1]]]`
 }, {
@@ -29,9 +31,9 @@ $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]!=];true;$chan
   $modifyChannelPerms[$guildID;$get[channel];-sendmessage]
   $setChannelVar[channel;templock;$get[channel]]
   $addCmdReactions[🔒]
-  $onlyPerms[managemessages;managechannel;\`#RIGHT#ERROR#LEFT#\`: You don't have perms to do this.]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;\`[ERROR]\`: This channel already locked!]
-  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;\`[ERROR]\`: This channel already temporary locked!]
+  $onlyPerms[managemessages;managechannel;${lock.perms}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==lock;${lock.locked}]
+  $onlyIf[$getChannelVar[channel;$get[channel]]==templock;${lock.templocked}]
 
 $let[channel;$replaceText[$replaceText[$checkCondition[$message[1]==];true;$channelID];false;$message[1]]]`
 }, {
