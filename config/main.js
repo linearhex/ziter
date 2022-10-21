@@ -11,9 +11,6 @@ const client = {
   prefix: {
     default: "-",
     recommended: "#"
-  },
-  db: {
-    path: process.env.mongo
   }
 };
 

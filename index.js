@@ -26,7 +26,7 @@ const bot = new Aoijs.Bot({
     database: {
     db: aoimongo,
     type: "aoi.mongo",
-    path: client.db.path,
+    path: process.env.mongo,
     },
     respondOnEdit: {
       commands: true,
