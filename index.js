@@ -1,18 +1,8 @@
 const Discord = require('discord.js');
-const aoimongo = require('aoi.mongo').default
-const mongoose = require('mongoose');
+const aoimongo = require('aoi.mongo')
 
 const client = require('./config/main.js');
 const load = require('./handler/cmds.js');
-
-mongoose.connect(process.env.mongo, {
-  useNewURlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  keepAlive: true
-})
-
-mongo.createModel('main')
 
 const Aoijs = require('aoi.js')
 const bot = new Aoijs.Bot({
@@ -20,10 +10,9 @@ const bot = new Aoijs.Bot({
     prefix: [client.prefix.default, client.prefix.recommended, client.mention.one, client.mention.two],
     intents: "all",
     database: {
-     db: require('aoi.mongo'),
+     db: aoimongo,
      type: "aoi.mongo",
-     path: process.env.mongo,
-     table: ["main"],
+     path: process.env.mongo
     },
     respondOnEdit: {
       commands: true,
