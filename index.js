@@ -12,9 +12,11 @@ app.listen(3000, () => {
 
 
 const Discord = require('discord.js');
-const client = require('./config/main.js')
-const load = require('./handler/cmds.js')
-const errormsg = require('./config/error.js')
+const aoimongo = require('aoi.mongo');
+const mongodb = require('mongodb');
+
+const client = require('./config/main.js');
+const load = require('./handler/cmds.js');
 
 const Aoijs = require('aoi.js')
 const bot = new Aoijs.Bot({
@@ -22,10 +24,10 @@ const bot = new Aoijs.Bot({
     prefix: [client.prefix.default, client.prefix.recommended, client.mention.one, client.mention.two],
     intents: "all",
     database: {
-    db: require('dbdjs.db'),
-    type: "dbdjs.db",
-    path: "./db/index/",
-    table: ["index"],
+     db: aoimongo,
+     type: "aoi.mongo",
+     path: process.env.mongo,
+     table: ["main"],
     },
     respondOnEdit: {
       commands: true,
