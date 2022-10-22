@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const aoimongo = require('aoi.mongo');
+const aoimongo = require('aoi.mongo').default
 const mongodb = require('mongodb');
 
 const client = require('./config/main.js');
@@ -11,7 +11,7 @@ const bot = new Aoijs.Bot({
     prefix: [client.prefix.default, client.prefix.recommended, client.mention.one, client.mention.two],
     intents: "all",
     database: {
-     db: aoimongo,
+     db: require('aoimongo'),
      type: "aoi.mongo",
      path: process.env.mongo,
      table: ["main"],
