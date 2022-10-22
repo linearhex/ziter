@@ -1,16 +1,3 @@
-const express = require('express');
-
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('Online 24/7')
-});
-
-app.listen(3000, () => {
-  console.log('server started');
-});
-
-
 const Discord = require('discord.js');
 const aoimongo = require('aoi.mongo');
 const mongodb = require('mongodb');
