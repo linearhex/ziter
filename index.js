@@ -12,7 +12,9 @@ const bot = new Aoijs.Bot({
     database: {
      db: aoimongo,
      type: "aoi.mongo",
-     path: "mongodb+srv://chwenotchew:hqrnjun202207@cluster0.mr8bacc.mongodb.net/?retryWrites=true&w=majority"
+     path: "mongodb+srv://chwenotchew:soobinedtz_77@cluster0.mr8bacc.mongodb.net/?retryWrites=true&w=majority",
+     tables: ["index"],
+     promisify: true
     },
     respondOnEdit: {
       commands: true,
